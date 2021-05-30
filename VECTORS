@@ -1,0 +1,55 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> v1;
+
+
+    v1.push_back(1);/////////////////INSERTION
+    v1.push_back(2);
+    v1.push_back(3);
+    v1.push_back(4);
+    v1.push_back(5);
+    v1.push_back(6);
+    v1.push_back(7);
+    v1.push_back(8);
+    cout<<"OUR VECTOR IS: ";
+    for(int i=0;i<v1.size();i++)/////////////DISPLAY
+        cout<<v1[i]<<" ";
+
+
+
+    cout<<"\n \nSIZe OF OUR VECTOR IS: "<<v1.size();////////////////////DISPLAY SIZE
+
+
+
+    v1.pop_back();///////////////DELETE LAST ELEMENT
+    v1.pop_back();
+      cout<<"\n \nOUR VECTOR AFTER DELETION IS: ";
+    for(int i=0;i<v1.size();i++)/////////////DISPLAY AFTER DELETION
+        cout<<v1[i]<<" ";
+
+
+
+        v1.erase(v1.begin()+1);////////////////////////deleting 2nd element
+        cout<<"\n \nOUR VECTOR AFTER DELETING 2nd ELEMENT : ";
+    for(int i=0;i<v1.size();i++)/////////////DISPLAY AFTER DELETION
+        cout<<v1[i]<<" ";
+
+
+
+        v1.erase(v1.begin(),v1.begin()+2);
+          cout<<"\n \nOUR VECTOR AFTER DELETING FIRST 2 ELEMENTS : ";
+    for(int i=0;i<v1.size();i++)/////////////DISPLAY AFTER DELETION
+        cout<<v1[i]<<" ";
+
+
+
+        reverse(v1.begin(),v1.end());///////////////////REVERSE THE VECTOR
+           cout<<"\n \nOUR VECTOR AFTER REVERSING ELEMENTS : ";
+    for(int i=0;i<v1.size();i++)/////////////DISPLAY AFTER REVERSE
+        cout<<v1[i]<<" ";
+
+
+   return 0;
+}
